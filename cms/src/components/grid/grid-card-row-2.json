@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_grid_grid_card_row_2s",
+  "info": {
+    "displayName": "grid_card_row_2"
+  },
+  "options": {},
+  "attributes": {
+    "grid_card_column_1": {
+      "type": "component",
+      "component": "grid.grid-card-column-1",
+      "repeatable": false
+    },
+    "grid_card_column_2": {
+      "type": "component",
+      "component": "grid.grid-card-column-2",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

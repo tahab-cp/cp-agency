@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_grid_grid_card_2s",
+  "info": {
+    "displayName": "grid_card_2"
+  },
+  "options": {},
+  "attributes": {
+    "grid_inner_card": {
+      "type": "component",
+      "component": "grid.grid-inner-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_grid_grid_column_3s",
+  "info": {
+    "displayName": "grid_column_3"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

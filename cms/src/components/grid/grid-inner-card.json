@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_grid_grid_inner_cards",
+  "info": {
+    "displayName": "grid_inner_card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "label_list": {
+      "type": "component",
+      "component": "list.label-list",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

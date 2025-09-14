@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_heading_content_titles",
+  "info": {
+    "displayName": "content_title"
+  },
+  "options": {},
+  "attributes": {
+    "title_1": {
+      "type": "string"
+    },
+    "title_2": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_grid_grid_column_4s",
+  "info": {
+    "displayName": "grid_column_4"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

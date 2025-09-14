@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_grid_grid_card_column_1s",
+  "info": {
+    "displayName": "grid_card_column_1"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "workflow_list": {
+      "type": "component",
+      "component": "list.workflow-list",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

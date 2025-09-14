@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_list_list_items",
+  "info": {
+    "displayName": "list_item"
+  },
+  "options": {},
+  "attributes": {
+    "label_1": {
+      "type": "string"
+    },
+    "label_2": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

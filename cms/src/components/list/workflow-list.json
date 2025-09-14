@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_list_workflow_lists",
+  "info": {
+    "displayName": "workflow_list"
+  },
+  "options": {},
+  "attributes": {
+    "list_item": {
+      "type": "component",
+      "component": "list.list-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

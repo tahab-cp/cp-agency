@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_list_label_lists",
+  "info": {
+    "displayName": "label_list"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
