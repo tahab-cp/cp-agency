@@ -107,7 +107,7 @@ const OurWorkSection = ({ caseStudies }) => {
         </div>
 
         <div className="block w-full overflow-hidden xl:hidden">
-          <CaseStudiesSlider />
+          <CaseStudiesSlider caseStudies={caseStudies} />
         </div>
 
         <button className="mt-[5rem] hidden w-full cursor-pointer items-center xl:inline-flex">

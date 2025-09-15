@@ -4,10 +4,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import { Navigation, Autoplay } from "swiper/modules";
 import Link from "next/link";
-import { caseStudiesCardData } from "@/constants/globals";
 import ContactArrowIcon from "@/assets/icons/contact-arrow.svg";
 
-const CaseStudiesSlider = () => {
+const CaseStudiesSlider = ({ caseStudies }) => {
   return (
     <Swiper
       modules={[Navigation, Autoplay]}
@@ -30,15 +29,15 @@ const CaseStudiesSlider = () => {
       }}
       className="mySwiper case-studies-slider"
     >
-      {caseStudiesCardData.map((item, idx) => (
+      {caseStudies.map((cs, idx) => (
         <SwiperSlide key={idx}>
           <Link
-            href={`/case-studies/${item.slug}`}
+            href={`/case-studies/${cs.slug}`}
             className="case-studies-card flex flex-col items-center p-[2rem] text-center"
           >
             <div className="relative h-[22rem] w-full overflow-hidden rounded-[2rem] md:h-[40rem] lg:h-[30rem] xl:h-[40rem]">
               <Image
-                src={item.image}
+                src={cs.image}
                 alt="Case Study Image"
                 height={440}
                 width={555}
@@ -49,7 +48,7 @@ const CaseStudiesSlider = () => {
 
             <div className="flex h-full flex-col justify-between">
               <h4 className="mt-[2rem] mb-[4rem] line-clamp-2 max-w-[50rem] text-[2rem] leading-[2.8rem] font-semibold tracking-[-0.02em] md:text-[3.4rem] md:leading-[4.8rem]">
-                {item.title}
+                {cs.title}
               </h4>
 
               <div className="mb-[2rem] flex w-full flex-col items-center justify-between gap-[2rem] px-[2rem] xl:flex-row">
@@ -59,15 +58,15 @@ const CaseStudiesSlider = () => {
                   </span>
 
                   <ul className="flex flex-wrap items-center gap-[2rem]">
-                    {item.technologies.slice(0, 2).map((tech, index) => (
-                      <li key={index}>
-                        <Image
-                          src={tech.src}
-                          alt={tech.alt}
-                          width={tech.width}
-                          height={tech.height}
-                          priority
-                        />
+                    {cs.technologies.slice(0, 2).map((tech) => (
+                      <li key={tech.id}>
+                        {tech.logo && (
+                          <img
+                            src={tech.logo}
+                            alt={tech.name}
+                            className="h-[2.2rem]"
+                          />
+                        )}
                       </li>
                     ))}
                   </ul>
